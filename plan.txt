@@ -1,0 +1,14 @@
+### ПОДГОТОВКА ###
+1.Клонировать репозиторий
+https://github.com/logolevel/gulp-start
+
+2. Открываем макет и подключаем шрифты
+fonts.googleapis.com
+-Montserrat
+-Open Sans и Open Sans Bold
+
+3. Подключить reset.css
+mayer reset css
+
+### ВЕРСТАЕМ PROGRESS BAR ###
+4. 

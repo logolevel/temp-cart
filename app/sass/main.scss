@@ -1,0 +1,82 @@
+@import "fonts";
+@import "libs";
+@import "vars";
+@import "_mixins/font-size";
+
+* {
+	box-sizing: border-box;
+	&:before, &:after {
+		box-sizing: border-box;
+	}
+}
+
+*::-webkit-input-placeholder{
+	color: #ddd;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #ddd;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #ddd;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #ddd;
+	opacity: 1;
+}
+/*our styles*/
+html {
+	font-size: 14px;
+}
+
+body {
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	opacity: 1;
+}
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+/*main styles*/
+
+/*progress-nav*/
+.wrap-progress-nav {
+	padding: 80px 0 60px
+}
+
+/*BLOCK progress-nav*/
+.progress-nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	&__dot {
+		max-width: 30px;
+		height: 30px;
+		flex-grow: 1;
+		background-color: #eee;
+		border-radius: 50%;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $Montserrat;
+		@include fontSize(12px);
+		line-height: 30px;
+		&:after {
+			content: '12';
+			display: block;
+		}
+	}
+	&__line {
+		background-color: #eee;
+		flex-grow: 1;
+		height: 2px;
+	}
+}
+
+@import "media";
