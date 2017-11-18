@@ -57,26 +57,60 @@ body {
 	display: flex;
 	align-items: center;
 	&__dot {
-		max-width: 30px;
+		width: 30px;
 		height: 30px;
-		flex-grow: 1;
-		background-color: #eee;
+		background-color: $orange;
+		color: $gray;
 		border-radius: 50%;
 		text-align: center;
+		line-height: 30px;
 		text-transform: uppercase;
 		font-family: $Montserrat;
 		@include fontSize(12px);
-		line-height: 30px;
+		position: relative;
+		overflow: visible;
+		cursor: pointer;
 		&:after {
-			content: '12';
-			display: block;
+			content: attr(data-step);
+			color: $white;
+		}
+		&.active {
+			background-color: $violet;
+		}
+		&.active.success:after {
+			content: 'ok';
+		}
+		&.active .progress-nav__text {
+			color: $black;
 		}
 	}
+	&__text {
+		position: absolute;
+		left: 50%;
+		top: 130%;
+		transform: translateX(-50%);
+		line-height: 1.5em;
+		width: 70px;
+		word-wrap: break-word;
+	}
 	&__line {
-		background-color: #eee;
+		background-color: $orange;
 		flex-grow: 1;
 		height: 2px;
+		position: relative;
+		overflow: hidden;
+		&.success:after {
+			content: '';
+			position: absolute;
+			background-color: $violet;
+			height: 2px;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
 	}
 }
+
+
 
 @import "media";
