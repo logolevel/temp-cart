@@ -32,11 +32,13 @@
 <body>
 
 	<div class="container">
+
+		<!-- Start progress-nav -->
 		<div class="row justify-content-lg-center">
 			<div class="col-lg-8">
 				<nav class="wrap-progress-nav">
 					<ul class="progress-nav">
-						<li class="progress-nav__dot active" data-step="1">
+						<li class="progress-nav__dot active current" data-step="1">
 							<span class="progress-nav__text">Cart</span>
 						</li>
 						<li class="progress-nav__line"></li>
@@ -55,6 +57,25 @@
 				</nav>
 			</div>
 		</div>
+		<!-- End progress-nav -->
+		<main>
+			<!-- Start tab-content (order list) -->
+			<div id="step-1" class="tab-content current">
+				<div class="tab-body">
+					body one
+				</div>
+				<div class="tab-footer">Buttons</div>
+			</div>
+			<!-- End tab-content (order list) -->
+			<!-- Start tab-content (credit card) -->
+			<div id="step-2" class="tab-content">
+				<div class="tab-body">
+					body two
+				</div>
+				<div class="tab-footer">Buttons</div>
+			</div>
+			<!-- End tab-content (credit card) -->
+		</main>
 	</div>
 	
 	<link rel="stylesheet" href="css/main.min.css">

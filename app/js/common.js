@@ -22,4 +22,15 @@ $(function() {
 		}
 	});
 
+	/*tabs*/
+	$('.progress-nav__dot').click(function(){
+		var tab_id = $(this).attr('data-step');
+
+		$('.progress-nav__dot').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+ "step-" + tab_id).addClass('current');
+	});
+
 });
