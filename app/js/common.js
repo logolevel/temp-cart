@@ -30,7 +30,7 @@ $(function() {
 		$('.tab-content').removeClass('current');
 
 		$(this).addClass('current');
-		$("#"+ "step-" + tab_id).addClass('current');
+		$("#step-" + tab_id).addClass('current');
 	});
 
 });

@@ -71,6 +71,68 @@ body {
   max-width: 100%;
   height: auto; }
 
+/*table*/
+.table {
+  width: 100%;
+  max-width: 100%; }
+
+/*// .table-responsive {
+// 	display: block;
+// 	width: 100%;
+// 	overflow-x: auto;
+// }*/
+/*btn*/
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: norap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  padding: 0.6rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-border-radius: .25rem;
+          border-radius: .25rem; }
+
+/*form*/
+.input-group {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .6rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-border-radius: .25rem;
+          border-radius: .25rem; }
+
+.input-group .form-control {
+  width: 1%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+
 /*main styles*/
 /*progress-nav*/
 .wrap-progress-nav {
@@ -142,10 +204,10 @@ body {
 /*SECTION tab-content*/
 .tab-content {
   display: none; }
+  .tab-content.current {
+    display: block; }
 
-.tab-content.current {
-  display: block; }
-
+/*BLOCK order-table*/
 /*font*/
 /*color*/
 /*==========  Desktop First  ==========*/
